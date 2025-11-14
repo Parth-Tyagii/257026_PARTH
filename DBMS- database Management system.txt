@@ -1,0 +1,25 @@
+DBMS- database Management system
+definition
+helps in handling large data base
+for ex. all details of students of college
+data are stored in two ways--Json format and table format
+
+to create data base there is a querry
+
+create database name;   #name can be anything
+use name;               #to enter the database u have created 
+
+#now we have to create a table in the database to work upon
+create table student(             #we are using student as the name of the table
+studentid varchar(100),
+age int,
+city varchar(100));        #varchar= it is used to specify the size of the input
+
+
+insert into student values(("rohan",19,"delhi"),("Parth",18,"haryana"));   #this command is used to enter the data in the table
+
+select * from personal_info where age > 30;   # this command is used to get specific data according to our need        
+                                             #"where"
+
+update personal_info set name='iron man' where age = 30;   #"update" is used to change the pre existing data from the table as shown
+                                                           #through the use of "set" we enter the new info and use"where" to tell where the change should be done
